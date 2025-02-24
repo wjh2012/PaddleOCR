@@ -1,6 +1,6 @@
 services:
   ppocr:
-    image: paddlepaddle/paddle:latest-dev-cuda10.1-cudnn7-gcc82
+    image: paddlepaddle/paddle:latest-dev-cuda10.2-cudnn7.6-trt7.0-gcc8.2
     container_name: ppocr
     ipc: host
     network_mode: "bridge"
