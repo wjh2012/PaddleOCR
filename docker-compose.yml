@@ -1,0 +1,15 @@
+services:
+  ppocr:
+    image: paddlepaddle/paddle:latest-dev-cuda10.1-cudnn7-gcc82
+    container_name: ppocr
+    ipc: host
+    network_mode: "bridge"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/paddle_custom
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
