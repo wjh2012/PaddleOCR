@@ -103,7 +103,7 @@ Train:
     shuffle: true
     batch_size_per_card: 256
     drop_last: true
-    num_workers: 4
+    num_workers: 8
 Eval:
   dataset:
     name: LMDBDataSet
@@ -126,4 +126,4 @@ Eval:
     shuffle: false
     drop_last: false
     batch_size_per_card: 256
-    num_workers: 4
+    num_workers: 8
